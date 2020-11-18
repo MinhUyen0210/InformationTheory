@@ -2,7 +2,7 @@ function log2(x){
     return Math.log(x) / Math.log(2);
 }
 function myFunction(){
-    var number, pa0, pa1, pb0, pb1, pb0a0, pb0a1, pb1a0, pb1a1, HA, HB, pb0_a0, pb0_a1, pb1_a0, pb1_a1, HBA, IBA;
+    var number, pa0, pa1, pb0, pb1, pb0a0, pb0a1, pb1a0, pb1a1, HA, HB, pb0_a0, pb0_a1, pb1_a0, pb1_a1, HBA, IAB;
     
     number = parseInt(document.getElementById("number").value);
     pa0 = parseFloat(document.getElementById("p(a0)").value);
@@ -32,6 +32,9 @@ function myFunction(){
 
     HBA = pb0_a0*log2(1/pb0a0)+pb0_a1*log2(1/pb0a1)+pb1_a0*log2(1/pb1a0)+pb1_a1*log2(1/pb1a1)
     document.getElementById("HBA").innerHTML = "H(B|A) = "+ HBA.toFixed(number);
+
+    IAB = HB-HBA;
+    document.getElementById("IAB").innerHTML = "I(A;B) = "+ IAB.toFixed(number);
 
 }
 //console.log("[p(b0|a0)", " ", "p(b1|a0) \n", "p(b0|a1)"," ", "p(b1|a1)] =");
