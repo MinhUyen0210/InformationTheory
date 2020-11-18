@@ -34,7 +34,7 @@ function myFunction(){
     document.getElementById("HBA").innerHTML = "H(B|A) = "+ HBA.toFixed(number);
 
     IAB = HB-HBA;
-    document.getElementById("IAB").innerHTML = "I(A;B) = "+ IAB.toFixed(number);
+    document.getElementById("IAB").innerHTML = "I(A;B) = "+ IAB.toFixed(number) + "bits/symbol";
 
 }
 //console.log("[p(b0|a0)", " ", "p(b1|a0) \n", "p(b0|a1)"," ", "p(b1|a1)] =");
