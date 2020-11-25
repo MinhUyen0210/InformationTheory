@@ -26,7 +26,7 @@ function myFunction(){
     
     let length = pa.length;
     
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < length; i++) { 
     let temp = 0;
     for (let j = 0; j < length; j++) {
     temp+= matrix[j][i]*pa[j];
