@@ -4,7 +4,7 @@ function log2(x){
 function myFunction(){
     var number, pa0, pa1, pb0, pb1, pb0a0, pb0a1, pb1a0, pb1a1, HA, HB, pb0_a0, pb0_a1, pb1_a0, pb1_a1, HBA, IAB;
     
-    number = parseInt(document.getElementById("number").value);
+    //number = parseInt(document.getElementById("number").value);
     pa0 = parseFloat(document.getElementById("p(a0)").value);
     //document.getElementById("pa0").innerHTML = "p(a0) = "+ pa0;
     pa1 = 1-pa0;
